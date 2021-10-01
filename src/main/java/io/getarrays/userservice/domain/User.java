@@ -15,7 +15,7 @@ public class User {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String usename;
+    private String username;
     private String password;
     @ManyToMany(fetch = EAGER)
     private Collection<Role> roles = new ArrayList<>();
